@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- A tag div é utilizada para dividir -->
+    <div>
+        <h1>Cadastro de DEVS</h1>
+        <p>Comple suas informações no bloco abaixo:</p>
+        <br>
+    </div>
+
+
+    <form>
+        <!-- a tag fieldset é usada para agrupar campos -->
+        <fieldset> 
+            <div>
+                <!-- a tag label é utilizada para descrever o campo -->
+                <label>Nome:</label>
+                <!-- a tag input é utilizada para que o usuário ou usuária possa inserir algum texto, data, número, cor, etc. -->
+
+                <!-- NOME -->
+                <input type="text" name="nome"id="nome">
+            </div>
+            
+            <div>
+                <!-- SOBRENOME -->
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+        
+        <div>
+            <!-- EMAIL -->
+            <label>E-mail:</label>
+            <input type="email" name="email" id="email">
+            <!-- hadiobutton são botões para seleção -->
+        </div>
+            <!-- OPÇÕES DE ARÉA-->
+
+        <label>De qual lado da aplicação você desenvolve?</label>
+        <label>
+            <input type="radio" name="devweb" value="frontend">Front-end
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Backend">Beck-end
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="fullstak">Fullstak
+        </label>
+        <div>
+            <!-- OPÇÕES DE SENIORIDADE -->
+            <label>Selecione a sua senioridade:</label>
+            <!-- Tag select é o campo que é utlizado para selecionar -->
+            <!-- Tag opition é as opções a serem selecionadas -->
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+        <!-- CHECKBOX -->
+        <fieldset>
+            <div>
+                <!-- HTML -->
+                <label>Selecione as tecnologias que você utliza:</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">Html</label>
+                <!-- CSS -->
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">Css</label>
+                <!--JAVASCRIPT -->
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+                <!-- Python -->
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
+                <label for="tecnologia4">Python</label>
+                <!-- PHP -->
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="PHP">
+                <label for="tecnologia5">Php</label>
+                <!-- Java -->
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Java">
+                <label for="tecnologia6">Java</label>
+                <!-- C#-->
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="C#">
+                <label for="tecnologia7">C#</label>
+            </div>
+        </fieldset>
+        <!-- AREA DE CAMPO -->
+        <div>
+            <label>Conte um pouco sobre a sua experiência:</label>
+            <textarea row="6" "width=26em" id="experiência" name="experiência"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
